@@ -55,7 +55,7 @@ Some parameters must be manually changed, such as the number of classes (output 
   * -f: if True an embedding layer with 128 nodes is inserted before the output layer
   * -i: path of the folder where the input csvs for training (train.csv), validation (valid.csv) and testing (test.csv) are stored
   * -o: path of the folder where to store the CNN’s weights.
-- Training_script_domain_adversarial_center.py -n -b -c -e -t -f -i -o.  The script is used to train the CNN using a domain adversarial CNN. Data generator must be modified, inserting the condition to distinguish the images from different domains (analyzing the path). 
+- Training_script_domain_adversarial_center.py -n -b -c -e -t -f -i -o.  The script is used to train the CNN using a domain adversarial CNN. Data generator must be modified, inserting the condition to distinguish the images from different domains (in this paper the path). 
   * -n: number of the experiment for the training
   * -b: batch size (32)
   * -c: CNN backbone to use (densenet121)
