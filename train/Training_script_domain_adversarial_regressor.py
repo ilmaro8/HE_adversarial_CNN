@@ -326,25 +326,13 @@ model = CNN_model()
 from torchvision import transforms
 prob = 0.5
 
-if (TASK=='no_augment'):
-
-	pipeline_transform = A.Compose([
-		A.VerticalFlip(p=prob),
-		A.HorizontalFlip(p=prob),
-		A.RandomRotate90(p=prob),
-		#A.ElasticTransform(alpha=0.1,p=prob),
-		#A.HueSaturationValue(hue_shift_limit=(-9),sat_shift_limit=25,val_shift_limit=10,p=prob),
-		])
-
-else:
-
-	pipeline_transform = A.Compose([
-		A.VerticalFlip(p=prob),
-		A.HorizontalFlip(p=prob),
-		A.RandomRotate90(p=prob),
-		#A.ElasticTransform(alpha=0.1,p=prob),
-		A.HueSaturationValue(hue_shift_limit=(-15,8),sat_shift_limit=(-20,10),val_shift_limit=(-8,8),p=prob),
-		])
+pipeline_transform = A.Compose([
+	A.VerticalFlip(p=prob),
+	A.HorizontalFlip(p=prob),
+	A.RandomRotate90(p=prob),
+	#A.ElasticTransform(alpha=0.1,p=prob),
+	#A.HueSaturationValue(hue_shift_limit=(-15,8),sat_shift_limit=(-20,10),val_shift_limit=(-8,8),p=prob),
+	])
 
 
 #DATA NORMALIZATION
