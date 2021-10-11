@@ -6,7 +6,7 @@ If you find this repository useful in your research, please cite:
 
 [1] Marini, N., Atzori, M., Otálora, S., Marchand-Maillet, S., & Müller, H. H&E-adversarial network: a convolutional neural network to learn stain-invariant features through Hematoxylin & Eosin regression.
 
-Paper link: https://www.researchgate.net/publication/354760937_HE-adversarial_network_a_convolutional_neural_network_to_learn_stain-invariant_features_through_Hematoxylin_Eosin_regression
+Paper link: https://openaccess.thecvf.com/content/ICCV2021W/CDPath/papers/Marini_HE-Adversarial_Network_A_Convolutional_Neural_Network_To_Learn_Stain-Invariant_Features_ICCVW_2021_paper.pdf
 
 ## Requirements
 Python==3.6.9, albumentations==0.1.8, numpy==1.17.3, opencv==4.2.0, pandas==0.25.2, pillow==6.1.0, torchvision==0.8.1, pytorch==1.7.0
